@@ -6,12 +6,12 @@ metadata:
     name: webapitest-rc
 spec:
   replicas: 3
-  selector:  
-    name: webapitest
+  selector: 
+    app: webapitest
   template:
     metadata:
       labels:
-        name: webapitest
+        app: webapitest
     spec:
       containers:
         - name: webapitest-container
